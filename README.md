@@ -9,7 +9,6 @@
 * This is a project demonstrating my ability with the angular CLI after just one week of exposure. Here's what I came up with!
 
 ## User Story:
-* As a user…
 
 * As a user, I'd like to visit a page to see a list of all team or club members.
 * As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
@@ -87,47 +86,10 @@ For feedback or support contact Joe Parsley at joewparsley@gmail.com
 * jQuery
 * NPM
 * Bower
-* Materialize 
+* Materialize
 
 ### License
 
 MIT
 
 Copyright (c) 2017 Joe Parsley
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# BandForge
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
-
-
-
-
-
-
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
