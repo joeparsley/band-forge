@@ -3,21 +3,27 @@ import { Injectable } from '@angular/core';
 import { Bands } from './bands.model';
 import { BANDS } from './mock-bands';
 
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
 @Injectable()
 export class BandService {
+  bands: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+     this.bands = database.list('bands');
+  }
 
   getBands() {
-    return BANDS;
+    return this.bands;
   }
 
 
   getBandsById(bandsId: number) {
-    for (var i = 0; i <= BANDS.length -1; i++) {
-      if (BANDS[i].id === bandsId){
-        return BANDS[i];
-      }
-    }
+
   }
+
+  addBand(newBand: Bands) {
+    this.bands.push(newBand);
+  }
+
 }

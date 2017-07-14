@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Bands } from '../bands.model';
 import { Router } from '@angular/router';
 import { BandService} from '../band.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-bands',
@@ -10,7 +12,8 @@ import { BandService} from '../band.service';
   providers: [BandService]
 })
 export class BandsComponent implements OnInit  {
-  bands: Bands[];
+  bands: FirebaseListObservable<any[]>;
+
    constructor(private router: Router, private bandService: BandService){}
 
    ngOnInit(){
@@ -19,7 +22,7 @@ export class BandsComponent implements OnInit  {
 
 
   goToDetailPage(clickedBand: Bands) {
-     this.router.navigate(['bands', clickedBand.id]);
+
    };
 
 

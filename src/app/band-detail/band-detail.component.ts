@@ -13,7 +13,7 @@ import { BandService} from '../band.service';
 })
 export class BandDetailComponent implements OnInit {
   bandsId: number;
-  bandToDisplay: Bands;
+  bandToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private bandService: BandService) { }
 
