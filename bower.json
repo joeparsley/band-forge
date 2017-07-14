@@ -1,0 +1,20 @@
+{
+  "name": "band-forge",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Joe Parsley <joewparsley@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.99.0"
+  }
+}

@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../bower_components/materialize/dist/css/materialize.css",
         "styles.css"
       ],
       "scripts": [],
