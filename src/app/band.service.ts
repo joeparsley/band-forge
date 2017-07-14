@@ -26,4 +26,20 @@ export class BandService {
     this.bands.push(newBand);
   }
 
+  updateBand(localUpdatedBand){
+    var bandEntryInFirebase = this.getBandsById(localUpdatedBand.$key);
+    bandEntryInFirebase.update({title: localUpdatedBand.title,
+                                description: localUpdatedBand.description,
+                                members: localUpdatedBand.members,
+                                guitar: localUpdatedBand.guitar,
+                                bass: localUpdatedBand.bass,
+                                drums: localUpdatedBand.drums,
+                                guitarTwo: localUpdatedBand.guitarTwo});
+  }
+
+
+  deleteBand(localBandToDelete){
+   var bandEntryInFirebase = this.getBandsById(localBandToDelete.$key);
+   bandEntryInFirebase.remove();
+ }
 }

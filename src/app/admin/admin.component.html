@@ -15,36 +15,42 @@
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input #newMembers type="text" class="validate">
           <label for="newMembers">Members</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input #newGuitar type="text" class="validate">
           <label for="newGuitar">Who Plays Guitar?</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input #newBass type="text" class="validate">
           <label for="newBass">Who Plays Bass?</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input #newDrums type="text" class="validate">
           <label for="newDrums">Who Plays Drums?</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input #newGuitarTwo type="text" class="validate">
           <label for="newGuitarTwo">Who else plays guitar?</label>
         </div>
       </div>
       <button class="btn waves-effect waves-light" type="submit" name="action" (click)="submitForm(newTitle.value, newDescription.value, newMembers.value, newGuitar.value, newBass.value, newDrums.value, newGuitarTwo.value); newTitle.value=''; newDescription.value=''; newMembers.value=''; newGuitar.value=''; newBass.value=''; newDrums.value=''; newGuitarTwo.value=''">Submit
-  </button>
+      </button>
     </form>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <div>
+    <app-bands></app-bands>
   </div>

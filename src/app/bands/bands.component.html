@@ -16,5 +16,10 @@
         <a (click)="goToDetailPage(band)">More details</a>
       </div>
     </div>
+    <div *ngIf="currentRoute === '/admin'">
+      <!-- {{band.description}} -->
+      <hr>
+      <app-band-edit [selectedBands]="band"></app-band-edit>
+    </div>
   </div>
 </div>

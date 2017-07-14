@@ -1,0 +1,47 @@
+<h4>Edit Band</h4>
+<div class="row">
+    <div class="row">
+      <div class="input-field col s6">
+        <!-- <label for="newTitle">Band Name</label> -->
+        <input #newTitle type="text" class="validate" [(ngModel)]="selectedBands.title">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <textarea #newDescription class="materialize-textarea" [(ngModel)]="selectedBands.description"></textarea>
+        <!-- <label for="newDescription">Band Description</label> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newMembers type="text" class="validate" [(ngModel)]="selectedBands.members">
+        <!-- <label for="newMembers">Members</label> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newGuitar type="text" class="validate" [(ngModel)]="selectedBands.guitar">
+        <!-- <label for="newGuitar">Who Plays Guitar?</label> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newBass type="text" class="validate" [(ngModel)]="selectedBands.bass">
+        <!-- <label for="newBass">Who Plays Bass?</label> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newDrums type="text" class="validate" [(ngModel)]="selectedBands.drums">
+        <!-- <label for="newDrums">Who Plays Drums?</label> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input #newGuitarTwo type="text" class="validate" [(ngModel)]="selectedBands.guitarTwo">
+        <!-- <label for="newGuitarTwo">Who else plays guitar?</label> -->
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" (click)="beginUpdatingBand(selectedBands)">Update</button>
+    <button class="btn waves-effect waves-light" (click)="beginDeletingBand(selectedBands)">Delete</button>
+  </div>
