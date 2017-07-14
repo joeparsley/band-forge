@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { BandsComponent } from './bands/bands.component';
+import { BandDetailComponent } from './band-detail/band-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    BandsComponent
+    BandsComponent,
+    BandDetailComponent
   ],
   imports: [
     BrowserModule,

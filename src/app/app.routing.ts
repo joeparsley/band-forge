@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BandsComponent } from './bands/bands.component';
+import { BandDetailComponent } from './band-detail/band-detail.component';
 
 const appRoutes: Routes = [
 {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
 {
   path: 'bands',
   component: BandsComponent
+},
+{
+  path: 'bands/:id',
+  component: BandDetailComponent
 }
 
 ];
