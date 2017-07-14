@@ -19,7 +19,7 @@ export class BandDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.bandsId = parseInt(urlParameters['id']);
+     this.bandsId = urlParameters['id'];
    });
    this.bandToDisplay = this.bandService.getBandsById(this.bandsId);
   }

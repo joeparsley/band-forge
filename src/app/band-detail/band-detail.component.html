@@ -1,7 +1,5 @@
-<h2>This band has id number: {{bandsId}}</h2>
-
 <div>
-  <h3>{{bandToDisplay.title}}</h3>
-  <h4>{{bandToDisplay.members}}</h4>
-  <p>{{bandToDisplay.description}}</p>
+  <h3>{{(bandToDisplay | async)?.title}}</h3>
+  <h4>{{(bandToDisplay | async)?.members}}</h4>
+  <p>{{(bandToDisplay | async)?.description}}</p>
 </div>

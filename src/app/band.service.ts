@@ -19,7 +19,7 @@ export class BandService {
 
 
   getBandsById(bandsId: number) {
-
+    return this.database.object('bands/' + bandsId);
   }
 
   addBand(newBand: Bands) {

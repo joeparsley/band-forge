@@ -21,8 +21,8 @@ export class BandsComponent implements OnInit  {
    }
 
 
-  goToDetailPage(clickedBand: Bands) {
-
+  goToDetailPage(clickedBand) {
+    this.router.navigate(['bands', clickedBand.$key]);
    };
 
 
