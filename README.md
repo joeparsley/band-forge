@@ -44,6 +44,20 @@
 
   This will download the project's dependencies
 
+  * Within the src folder create a file in the app directory called `api-keys.ts`
+
+    Copy and Paste this code to the file
+
+    `export var masterFirebaseConfig = {
+      apiKey: "AIzaSyDjSLfRQ75k45w1bCuRxsFjff5xOnQf9is",
+      authDomain: "bandforge-c394c.firebaseapp.com",
+      databaseURL: "https://bandforge-c394c.firebaseio.com",
+      projectId: "bandforge-c394c",
+      storageBucket: "",
+      messagingSenderId: "677349144446"
+      };
+  `
+
 * Build the project,
 
   Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
@@ -52,19 +66,6 @@
 
   Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-* Within the src folder create a file in the app directory called `api-keys.ts`
-
-  Copy and Paste this code to the file
-
-  `export var masterFirebaseConfig = {
-    apiKey: "AIzaSyDjSLfRQ75k45w1bCuRxsFjff5xOnQf9is",
-    authDomain: "bandforge-c394c.firebaseapp.com",
-    databaseURL: "https://bandforge-c394c.firebaseio.com",
-    projectId: "bandforge-c394c",
-    storageBucket: "",
-    messagingSenderId: "677349144446"
-    };
-`
 * You're good to go!
 
 ## Known Bugs
